@@ -10,7 +10,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute top-1/2 transform -translate-y-1/2 right-5 lg:right-40 z-10 cursor-pointer"
+      className="absolute top-1/2 transform -translate-y-1/2 right-1 sm:right-5 lg:right-40 z-10 cursor-pointer"
       onClick={onClick}
     >
       <Image src="/assets/right-arrow.svg" alt="Next" width={40} height={40} />
@@ -23,7 +23,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute top-1/2 transform -translate-y-1/2 left-5 lg:left-40 z-10 cursor-pointer"
+      className="absolute top-1/2 transform -translate-y-1/2 left-1 sm:left-5 lg:left-40 z-10 cursor-pointer"
       onClick={onClick}
     >
       <Image src="/assets/left-arrow.svg" alt="Previous" width={40} height={40} />
@@ -61,7 +61,6 @@ const AllInOne = () => {
         breakpoint: 480,
         settings: {
           centerPadding: "0px",
-          arrows: false,
         }
       }
     ]
